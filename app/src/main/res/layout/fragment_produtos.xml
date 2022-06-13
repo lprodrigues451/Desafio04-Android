@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".produto.Fragment.AdicionarLista.ProdutosFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:text="@string/texto_cadastro_produtos"
+        android:textSize="@dimen/size_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:hint="@string/hint_nome_produto"
+        android:textSize="@dimen/size_12"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etQuantidadeProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:hint="@string/hint_quantidade_produto"
+        android:textSize="@dimen/size_12"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeProduto"
+        app:layout_constraintStart_toStartOf="@+id/etNomeProduto"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeProduto" />
+
+    <EditText
+        android:id="@+id/etValorProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:hint="@string/hint_valor_produto"
+        android:textSize="@dimen/size_12"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etQuantidadeProduto"
+        app:layout_constraintStart_toStartOf="@+id/etQuantidadeProduto"
+        app:layout_constraintTop_toBottomOf="@+id/etQuantidadeProduto" />
+
+    <EditText
+        android:id="@+id/etReceitaProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:textSize="@dimen/size_12"
+        android:hint="@string/hint_receita_produto"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etValorProduto"
+        app:layout_constraintStart_toStartOf="@+id/etValorProduto"
+        app:layout_constraintTop_toBottomOf="@+id/etValorProduto" />
+
+    <Button
+        android:id="@+id/bAdicionarProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/text_cadastrar_produto"
+        android:backgroundTint="@color/terceira"
+        app:layout_constraintEnd_toEndOf="@+id/etReceitaProduto"
+        app:layout_constraintStart_toStartOf="@+id/etReceitaProduto"
+        app:layout_constraintTop_toBottomOf="@+id/etReceitaProduto" />
+
+    <Button
+        android:id="@+id/bVerProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/text_Ver_produto"
+        android:backgroundTint="@color/quarta"
+        app:layout_constraintEnd_toEndOf="@+id/bAdicionarProduto"
+        app:layout_constraintStart_toStartOf="@+id/bAdicionarProduto"
+        app:layout_constraintTop_toBottomOf="@+id/bAdicionarProduto" />
+
+    <Button
+        android:id="@+id/bValorTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/text_Ver_valor_total"
+        app:layout_constraintEnd_toEndOf="@+id/bVerProduto"
+        app:layout_constraintStart_toStartOf="@+id/bVerProduto"
+        app:layout_constraintTop_toBottomOf="@+id/bVerProduto" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

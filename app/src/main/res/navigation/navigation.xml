@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/produtosFragment">
+
+    <fragment
+        android:id="@+id/produtosFragment"
+        android:name="br.com.zup.desafioandroid.produto.Fragment.AdicionarLista.ProdutosFragment"
+        android:label="fragment_produtos"
+        tools:layout="@layout/fragment_produtos" >
+        <action
+            android:id="@+id/action_produtosFragment_to_verProdutosFragment"
+            app:destination="@id/verProdutosFragment" />
+        <action
+            android:id="@+id/action_produtosFragment_to_valorTotalFragment"
+            app:destination="@id/valorTotalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verProdutosFragment"
+        android:name="br.com.zup.desafioandroid.produto.Fragment.VerLista.VerListaProdutosFragment"
+        android:label="fragment_ver_produtos"
+        tools:layout="@layout/fragment_ver_produtos" >
+        <action
+            android:id="@+id/action_verProdutosFragment_to_detalheFragment"
+            app:destination="@id/detalheFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalheFragment"
+        android:name="br.com.zup.desafioandroid.produto.Fragment.Detalhe.DetalheFragment"
+        android:label="fragment_detalhe"
+        tools:layout="@layout/fragment_detalhe" />
+    <fragment
+        android:id="@+id/valorTotalFragment"
+        android:name="br.com.zup.desafioandroid.produto.Fragment.ValorTotal.ValorTotalFragment"
+        android:label="fragment_valor_total"
+        tools:layout="@layout/fragment_valor_total" >
+        <action
+            android:id="@+id/action_valorTotalFragment_to_verProdutosFragment"
+            app:destination="@id/verProdutosFragment" />
+        <argument
+            android:name="projetos"
+            app:argType="br.com.zup.desafioandroid.model.Produtos" />
+        <action
+            android:id="@+id/action_valorTotalFragment_to_produtosFragment"
+            app:destination="@id/produtosFragment" />
+    </fragment>
+</navigation>

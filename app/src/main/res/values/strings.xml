@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DesafioAndroid</string>
+    <string name="titulo_do_app">SimCity São João</string>
+    <string name="descricao_do_app">Festas juninas, é algo muito bom! E em SimCity não é diferente! Aqui nesse app você consegue organizar a sua lista de compras para a sua festa junina de maneira fácil e simples, só cadastrar os produtos da sua receita e se divertir!</string>
+    <string name="texto_botao_ir_produto">IR PARA PRODUTOS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texto_cadastro_produtos">Cadastro de produtos</string>
+    <string name="hint_nome_produto">Nome do produto</string>
+    <string name="hint_quantidade_produto">Quantidade do produto</string>
+    <string name="hint_valor_produto">Valor(unitário) do produto</string>
+    <string name="hint_receita_produto">Receita</string>
+    <string name="text_cadastrar_produto">CADASTRAR NOVO PRODUTO</string>
+    <string name="text_Ver_produto">VER PRODUTOS</string>
+    <string name="produto_name">Produtos</string>
+    <string name="SimCity_SaoJoao_name">SimCity São João</string>
+    <string name="texto_produtos_cadastrados">Produtos cadastrados</string>
+    <string name="tx_produto">Produto</string>
+    <string name="txt_quantidade">Quantidade:</string>
+    <string name="txt_valor">Valor unitário:</string>
+    <string name="text_Ver_valor_total">VALOR TOTAL</string>
+    <string name="txt_receita">Receita</string>
+    <string name="appbar_total">Valor Total</string>
+    <string name="produto_detalhe">Detalhes do produtos</string>
+
+</resources>

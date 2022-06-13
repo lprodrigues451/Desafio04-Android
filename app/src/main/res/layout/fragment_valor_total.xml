@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".produto.Fragment.ValorTotal.ValorTotalFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/tamanho_imagem_80"
+        android:layout_height="@dimen/tamanho_imagem_80"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/carrinho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:text="Valor total:"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/bAdicionarProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_16"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/terceira"
+        android:text="@string/text_cadastrar_produto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotal" />
+
+    <Button
+        android:id="@+id/bVerProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/text_Ver_produto"
+        android:backgroundTint="@color/quarta"
+        app:layout_constraintEnd_toEndOf="@+id/bAdicionarProduto"
+        app:layout_constraintStart_toStartOf="@+id/bAdicionarProduto"
+        app:layout_constraintTop_toBottomOf="@+id/bAdicionarProduto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
